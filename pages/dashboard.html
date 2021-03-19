@@ -25,16 +25,54 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <div class="container mt-4" id="dasboard">
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Inka System</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/bills.html">Fakturor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/create.html">Skapa projekt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/economy.html">Ekonomi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/project.html">Projekt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container mt-1" id="dasboard">
+      <h4>RAPPORTER TIMMAR</h4>
+      <p id="welcome"></p>
       <div class="row">
         <!-- left list -->
         <div class="col-lg-3 col-md-12">
           <div class="container">
             <ul class="list-group">
-              <li class="list-group-item">TIMMAR</li>
-              <li class="list-group-item">RAPPORTERING</li>
-              <li class="list-group-item">ÄNDRA TIMMAR</li>
-              <li class="list-group-item">SEMESTER</li>
+              <li class="list-group-item"><a href="#">ÄNDRA TIMMAR</a></li>
+              <li class="list-group-item"><a href="#">SEMESTER</a></li>
+              <li class="list-group-item"><a href="#">KALENDER</a></li>
+              <li class="list-group-item"><a href="#">MIN VECKOLISTA</a></li>
             </ul>
           </div>
         </div>
@@ -87,15 +125,12 @@
         <div class="col-lg-3 col-md-12">
           <div class="container">
             <ul class="list-group">
-              <li class="list-group-item">Alla projekt</li>
-              <li class="list-group-item">FAKTUROR</li>
-              <li class="list-group-item">KUNDER</li>
-              <li class="list-group-item">TIMMAR</li>
-              <li class="list-group-item">RAPPORTER</li>
-              <li class="list-group-item">Admin</li>
-              <li class="list-group-item">KALENDER</li>
-              <li class="list-group-item">EKONOMI</li>
-              <li class="list-group-item">MIN VECKOLISTA</li>
+              <li class="list-group-item"><a href="#">Alla projekt</a></li>
+              <li class="list-group-item"><a href="#">FAKTUROR</a></li>
+              <li class="list-group-item"><a href="#">KUNDER</a></li>
+              <li class="list-group-item"><a href="#">RAPPORTER</a></li>
+              <li class="list-group-item"><a href="#">Admin</a></li>
+              <li class="list-group-item"><a href="#">EKONOMI</a></li>
             </ul>
           </div>
         </div>

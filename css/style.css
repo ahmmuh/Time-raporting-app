@@ -1,53 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-body{
-background: linear-gradient(rgba(19, 204, 224),rgb(19, 204, 224));
-font-family: 'Roboto', sans-serif;
-}
-.container{
-    background-color: whitesmoke;
-    padding: 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
-}
-#dasboard .container{
-    border-top: 1px solid #222;
-}
-.list-group .list-group-item{
-    background-color: inherit;
-}
- #raport-btn{
-    background: linear-gradient(rgb(2, 54, 59),rgb(21, 124, 136));
+body {
+  background: #4ca1af; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c4e0e5,
+    #4ca1af
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c4e0e5,
+    #4ca1af
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+  font-family: "Roboto", sans-serif;
 }
-#login{
-    height: 100vh;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    
+.container {
+  background-color: whitesmoke;
+  padding: 2rem;
 }
-.form-group input,#login-btn,#raport-btn,#project,#activity{
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+#dasboard .container {
+  border-top: 1px solid #222;
 }
-#login-btn{
-background: linear-gradient(rgb(11, 119, 241),rgb(5, 165, 66));
-width: 12rem;
+.list-group .list-group-item {
+  background-color: inherit;
+}
+#raport-btn {
+  background: linear-gradient(rgb(2, 54, 59), rgba(21, 124, 136, 0.425));
+}
+#login {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 
-#boxes div{
-    border: 2px solid #e1e1e1;
-    height: 230px;
-    padding: .5rem;
-    box-shadow: 2px 4px 3px #322;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-color: rgb(234, 236, 229);
+.form-group input,
+#login-btn,
+#raport-btn,
+#project,
+#activity {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
-#boxes div i{
-    color: red;
+#login-btn {
+  background: linear-gradient(rgb(11, 119, 241), rgb(5, 165, 66));
+  width: 12rem;
+}
+
+#boxes div {
+  border: 2px solid #e1e1e1;
+  height: 230px;
+  padding: 0.5rem;
+  box-shadow: 2px 4px 3px #322;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: rgb(234, 236, 229);
+}
+#boxes div i {
+  color: red;
+}
+
+.container input[type="radio"],
+label {
+  cursor: pointer;
+}
+
+/* //bills info */
+#bills-info {
+  border-bottom: 1px solid #222;
+  padding-bottom: 1rem;
+}
+
+/* nav */
+nav ul li a {
+  color: white !important;
+}
+.navbar-brand {
+  font-family: "Indie Flower", cursive;
+  font-size: 2rem;
 }
