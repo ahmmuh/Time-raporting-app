@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+      integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Ekonomi</title>
+  </head>
+  <body>
+  <div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Inka System</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bills.html">Fakturor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create.html">Skapa projekt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="economy.html">Ekonomi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Projekt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container my-1">
+        <h4>EKONOMI </h4>
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <ul class="list-group">
+            <li class="list-group-item ">
+              <a href="#"> LEVERANTÖRS </a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"> LÄGGA TILL LEVERANTÖRS</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"> ÖVRIGA</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"> PRELIMI-INTÄKTER</a>
+            </li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item ">
+              <a href="#"> FAKTUROR</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"> LEVERANTÖRS</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"> ÖVRIGA</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"> PRELIM-INTÄKTER</a>
+            </li>
+          </ul>
+
+          <ul class="list-group">
+            <li class="list-group-item ">
+              <a href="#"> RAPPORT</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"> MÅNAD</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#"> ÅR</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <form>
+            <div class="form-group">
+              <label for="billName">FAKTURANAMN</label>
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                name="billName"
+                id="billName"
+                aria-describedby="helpId"
+                placeholder=""
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="billNumber">FAKTURASNR</label>
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                name="billNumber"
+                id="billNumber"
+                aria-describedby="helpId"
+                placeholder=""
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contactPerson">KONTAKT</label>
+              <select
+                class="form-control"
+                name="contactPerson"
+                id="contactPerson"
+              >
+                <option>Person 1</option>
+                <option>Person 1</option>
+                <option>Person 1</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="billStartDate">FAKTURADATUM</label>
+              <input
+                type="text"
+                class="datepicker form-control form-control-sm"
+                name="billStartDate"
+                id="billStartDate"
+                aria-describedby="helpId"
+                placeholder="MM/DD/YYYY"
+
+              />
+            </div>
+            <div class="form-group">
+              <label for="billEndDate">FÖRFALLODATUM</label>
+              <input
+                type="text"
+                class="datepicker form-control form-control-sm"
+                name="billEndDate"
+                id="billEndDate"
+                aria-describedby="helpId"
+               placeholder="MM/DD/YYYY"
+
+              />
+            </div>
+            <div class="form-group">
+              <label for="ammount">TOTALBELOPP</label>
+              <input
+                type="number"
+                class="form-control form-control-sm"
+                name="ammount"
+                id="ammount"
+                aria-describedby="helpId"
+                placeholder="0"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="moms">MOMS</label>
+              <input
+                type="number"
+                class="form-control form-control-sm"
+                name="moms"
+                id="moms"
+                aria-describedby="helpId"
+                placeholder="25"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-3 col-md-12">
+            <div class="container">
+            <ul class="list-group">
+              <li class="list-group-item"><a href="#">Alla projekt</a></li>
+              <li class="list-group-item"><a href="#">FAKTUROR</a></li>
+              <li class="list-group-item"><a href="#">KUNDER</a></li>
+              <li class="list-group-item"><a href="#">RAPPORTER</a></li>
+              <li class="list-group-item"><a href="#">Admin</a></li>
+              <li class="list-group-item"><a href="#">EKONOMI</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/date.js"></script>
+  </body>
+</html>
